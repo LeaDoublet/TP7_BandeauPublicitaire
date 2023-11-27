@@ -17,6 +17,17 @@ public class ExempleDUtilisation {
         Color back = monBandeau.getBackground();
         Color fore = monBandeau.getForeground();
 
+        Scenario scenario = new Scenario();
+        scenario.creerScenarioDeBase();
+
+        // Application du scenario de base au Bandeau
+        scenario.appliquer(monBandeau);
+
+        scenario.ajoutEffet(new RotationEffet(),2);
+
+        // Fermeture du Bandeau
+        monBandeau.close();
+        /*
         monBandeau.setMessage("Hello");
         monBandeau.sleep(1000);
         monBandeau.setMessage("On va changer de police");
@@ -57,5 +68,6 @@ public class ExempleDUtilisation {
         monBandeau.setMessage("Terminé");
         monBandeau.sleep(3000);
         monBandeau.close();
+        */
     }
 }
