@@ -25,7 +25,7 @@ public class Scenario {
 
     public void ajoutEffet(Effet effet, int repetitionCount) {
         this.effet.add(effet);
-        repetitionCompte.add(repetitionCount);
+        this.repetitionCompte.add(repetitionCount);
     }
 
     public void appliquer(Bandeau bandeau) {

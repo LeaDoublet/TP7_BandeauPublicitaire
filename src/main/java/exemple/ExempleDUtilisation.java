@@ -25,6 +25,7 @@ public class ExempleDUtilisation {
 
         scenario.ajoutEffet(new RotationEffet(),2);
 
+        scenario.appliquer(monBandeau);
         // Fermeture du Bandeau
         monBandeau.close();
         /*
