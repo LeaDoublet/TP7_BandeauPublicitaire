@@ -7,6 +7,22 @@ public class Scenario {
     private List<Effet> effet;
     private List<Integer> repetitionCompte;
 
+    public List<Effet> getEffet() {
+        return effet;
+    }
+
+    public void setEffet(List<Effet> effet) {
+        this.effet = effet;
+    }
+
+    public List<Integer> getRepetitionCompte() {
+        return repetitionCompte;
+    }
+
+    public void setRepetitionCompte(List<Integer> repetitionCompte) {
+        this.repetitionCompte = repetitionCompte;
+    }
+
     public Scenario(){
         this.effet = new ArrayList<Effet>();
         this.repetitionCompte = new ArrayList<Integer>();
